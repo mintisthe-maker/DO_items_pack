@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "do:item/damoosesblastingcaps"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -106,
+        -82,
+        -161
+      ]
+    },
+    "ground": {
+      "rotation": [
+        71,
+        0,
+        0
+      ]
+    }
+  }
+}

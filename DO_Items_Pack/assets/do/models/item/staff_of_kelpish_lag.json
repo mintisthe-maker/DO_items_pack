@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "do:item/staff_of_kelpish_lag"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        34,
+        34,
+        48
+      ]
+    },
+    "ground": {
+      "rotation": [
+        -66,
+        0,
+        0
+      ]
+    }
+  }
+}
