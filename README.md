@@ -4,11 +4,11 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ## Server setup (server.properties)
 
-1. Upload `DO_Items_Pack.zip` somewhere with a DIRECT download link (e.g. GitHub release, mc-packs.net, Dropbox with ?dl=1).
+1. The zip is hosted in this repo; the link below is already the direct download.
 2. In server.properties:
 
 ```
-resource-pack=<direct link to the zip>
+resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
 resource-pack-sha1=ca32c49369e7451d6080928d96d95a43560f53bd
 require-resource-pack=true
 ```
