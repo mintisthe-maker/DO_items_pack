@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=f1139fde57ccdd59e0063efa29543f569c57e039
+resource-pack-sha1=34a18599efae05b1400cd242988f694d4aabc3f6
 require-resource-pack=true
 ```
 
@@ -46,6 +46,29 @@ give @p minecraft:iron_nugget[item_model="do:victorytome",item_name="VictoryTome
 give @p minecraft:iron_nugget[item_model="do:wizardhat",item_name="WizardHat"]
 give @p minecraft:iron_nugget[item_model="do:damoosesblastingcaps",item_name="DaMoosesBlastingCaps"]
 give @p minecraft:iron_nugget[item_model="do:tygrrnade",item_name="Tygrrnade"]
+give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses"]
+give @p minecraft:iron_nugget[item_model="do:sushi_s_darling_ribbon_wand",item_name="Sushi's Darling Ribbon Wand"]
+give @p minecraft:iron_nugget[item_model="do:golden_vinyl_of_truth",item_name="Golden Vinyl of Truth"]
+give @p minecraft:iron_nugget[item_model="do:the_enthusiast_s_refusal",item_name="The Enthusiast's Refusal"]
+```
+
+## Wearable 3D Glasses
+
+The model has a head position, so the glasses show over the eyes when worn. The `equippable={slot:"head"}` part puts them in the helmet slot.
+
+Iron nugget base (can't be placed as a block, recommended):
+```
+give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses",equippable={slot:"head"}]
+```
+
+Carved pumpkin base (the pumpkin trick). Overriding `equippable` removes the orange pumpkin blur. Note: right-clicking a block with it places a normal carved pumpkin.
+```
+give @p minecraft:carved_pumpkin[item_model="do:3d_glasses",item_name="3D Glasses",equippable={slot:"head"}]
+```
+
+Red/blue screen tint while worn (works with either base item):
+```
+give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses",equippable={slot:"head",camera_overlay:"do:misc/3d_glasses_overlay"}]
 ```
 
 ## Give commands - cards
@@ -57,7 +80,10 @@ give @p minecraft:iron_nugget[item_model="do:cards/adrenaline_rush",item_name="A
 give @p minecraft:iron_nugget[item_model="do:cards/beast_sense",item_name="Beast Sense"]
 give @p minecraft:iron_nugget[item_model="do:cards/bounding_strides",item_name="Bounding Strides"]
 give @p minecraft:iron_nugget[item_model="do:cards/brilliance",item_name="Brilliance"]
+give @p minecraft:iron_nugget[item_model="do:cards/chill_step",item_name="Chill Step"]
+give @p minecraft:iron_nugget[item_model="do:cards/cold_snap",item_name="Cold Snap"]
 give @p minecraft:iron_nugget[item_model="do:cards/dark_depths",item_name="Dark Depths"]
+give @p minecraft:iron_nugget[item_model="do:cards/deepfrost",item_name="Deepfrost"]
 give @p minecraft:iron_nugget[item_model="do:cards/dungeon_lackey",item_name="Dungeon Lackey"]
 give @p minecraft:iron_nugget[item_model="do:cards/dungeon_repairs",item_name="Dungeon Repairs"]
 give @p minecraft:iron_nugget[item_model="do:cards/eerie_silence",item_name="Eerie Silence"]
@@ -65,6 +91,7 @@ give @p minecraft:iron_nugget[item_model="do:cards/ember_focus",item_name="Ember
 give @p minecraft:iron_nugget[item_model="do:cards/ember_seeker",item_name="Ember Seeker"]
 give @p minecraft:iron_nugget[item_model="do:cards/evasion",item_name="Evasion"]
 give @p minecraft:iron_nugget[item_model="do:cards/eyes_on_the_prize",item_name="Eyes On The Prize"]
+give @p minecraft:iron_nugget[item_model="do:cards/frost_focus",item_name="Frost Focus"]
 give @p minecraft:iron_nugget[item_model="do:cards/fuzzy_bunny_slippers",item_name="Fuzzy Bunny Slippers"]
 give @p minecraft:iron_nugget[item_model="do:cards/hazerdus_embers",item_name="Hazerdus Embers"]
 give @p minecraft:iron_nugget[item_model="do:cards/loot_and_scoot",item_name="Loot And Scoot"]
@@ -97,3 +124,4 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Tygrrnade is a 3D model (body/head/handle); everything else is a flat sprite like vanilla items.
 - Staff and Staff of Kelpish Lag had the same texture name in Blockbench but different art; they're kept as separate textures.
 - Cards live under `do:cards/...` (models in `models/item/cards`, textures in `textures/item/cards`), merged in from the separate DO Cards pack and moved from the `custom` namespace to `do`.
+- 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
