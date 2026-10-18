@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=34a18599efae05b1400cd242988f694d4aabc3f6
+resource-pack-sha1=3732ddc5193f898893687906b037aa01e648e3ad
 require-resource-pack=true
 ```
 
@@ -50,6 +50,7 @@ give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses"]
 give @p minecraft:iron_nugget[item_model="do:sushi_s_darling_ribbon_wand",item_name="Sushi's Darling Ribbon Wand"]
 give @p minecraft:iron_nugget[item_model="do:golden_vinyl_of_truth",item_name="Golden Vinyl of Truth"]
 give @p minecraft:iron_nugget[item_model="do:the_enthusiast_s_refusal",item_name="The Enthusiast's Refusal"]
+give @p minecraft:iron_nugget[item_model="do:windmill",item_name="Windmill"]
 ```
 
 ## Wearable 3D Glasses
@@ -124,4 +125,5 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Tygrrnade is a 3D model (body/head/handle); everything else is a flat sprite like vanilla items.
 - Staff and Staff of Kelpish Lag had the same texture name in Blockbench but different art; they're kept as separate textures.
 - Cards live under `do:cards/...` (models in `models/item/cards`, textures in `textures/item/cards`), merged in from the separate DO Cards pack and moved from the `custom` namespace to `do`.
+- Windmill is a 3D model (thatched tower, cap, gallery, orange/white sails), based on a photo of the Het Jonge Schaap mill at Zaanse Schans.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
