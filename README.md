@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=7adea745a78c7bc9bf84aa9fa3107de8b420097b
+resource-pack-sha1=c8be3a92cf18dd02c40c8740d8257b627ec0fd7b
 require-resource-pack=true
 ```
 
