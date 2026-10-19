@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=3732ddc5193f898893687906b037aa01e648e3ad
+resource-pack-sha1=a3723c803170c85e74532ba59b26e544c979fca9
 require-resource-pack=true
 ```
 
@@ -72,6 +72,20 @@ Red/blue screen tint while worn (works with either base item):
 give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses",equippable={slot:"head",camera_overlay:"do:misc/3d_glasses_overlay"}]
 ```
 
+## Wearable 3D Wizard Hat
+
+A 3D version of the wizard hat (brim, red band, tiered cone, floppy tip) that sits on top of the head like a hat and leaves the face clear. The original flat `do:wizardhat` sprite is unchanged.
+
+Carved pumpkin base (the pumpkin trick). Overriding `equippable` removes the orange pumpkin blur:
+```
+give @p minecraft:carved_pumpkin[item_model="do:wizardhat_3d",item_name="Wizard Hat",equippable={slot:"head"}]
+```
+
+Iron nugget base (can't be placed as a block):
+```
+give @p minecraft:iron_nugget[item_model="do:wizardhat_3d",item_name="Wizard Hat",equippable={slot:"head"}]
+```
+
 ## Give commands - cards
 
 Cards use iron nuggets as the base item.
@@ -126,4 +140,5 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Staff and Staff of Kelpish Lag had the same texture name in Blockbench but different art; they're kept as separate textures.
 - Cards live under `do:cards/...` (models in `models/item/cards`, textures in `textures/item/cards`), merged in from the separate DO Cards pack and moved from the `custom` namespace to `do`.
 - Windmill is a 3D model (thatched tower, cap, gallery, orange/white sails), based on a photo of the Het Jonge Schaap mill at Zaanse Schans.
+- Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
