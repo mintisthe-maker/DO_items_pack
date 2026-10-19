@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=10cb128fd9132ee060546cabe63b44a6510b867e
+resource-pack-sha1=7adea745a78c7bc9bf84aa9fa3107de8b420097b
 require-resource-pack=true
 ```
 
@@ -74,7 +74,7 @@ give @p minecraft:iron_nugget[item_model="do:3d_glasses",item_name="3D Glasses",
 
 ## Wearable 3D Wizard Hat
 
-A 3D version of the wizard hat (brim, red band, tiered cone, floppy tip) that sits on top of the head like a hat and leaves the face clear. The original flat `do:wizardhat` sprite is unchanged.
+A purple 3D version of the wizard hat (brim, band, tiered cone, floppy tip; ombré from dark tip to light brim) that sits on top of the head like a hat and leaves the face clear. The original flat `do:wizardhat` sprite is unchanged.
 
 Carved pumpkin base (the pumpkin trick). Overriding `equippable` removes the orange pumpkin blur:
 ```
