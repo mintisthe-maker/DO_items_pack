@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=08eeb44ed14ce2ec884d3cd5e15f93cbaaa0b330
+resource-pack-sha1=c93b600e204d70c375321d48af80afcfba5788f7
 require-resource-pack=true
 ```
 
@@ -51,6 +51,7 @@ give @p minecraft:iron_nugget[item_model="do:sushi_s_darling_ribbon_wand",item_n
 give @p minecraft:iron_nugget[item_model="do:golden_vinyl_of_truth",item_name="Golden Vinyl of Truth"]
 give @p minecraft:iron_nugget[item_model="do:the_enthusiast_s_refusal",item_name="The Enthusiast's Refusal"]
 give @p minecraft:iron_nugget[item_model="do:windmill",item_name="Windmill"]
+give @p minecraft:iron_nugget[item_model="do:kadens_ring",item_name="Kaden's Ring of the Helping Hand"]
 ```
 
 ## Wearable 3D Glasses
@@ -140,5 +141,6 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Staff and Staff of Kelpish Lag had the same texture name in Blockbench but different art; they're kept as separate textures.
 - Cards live under `do:cards/...` (models in `models/item/cards`, textures in `textures/item/cards`), merged in from the separate DO Cards pack and moved from the `custom` namespace to `do`.
 - Windmill is a 3D model (thatched tower, cap, gallery, orange/white sails), based on a photo of the Het Jonge Schaap mill at Zaanse Schans.
+- Kaden's Ring of the Helping Hand (`do:kadens_ring`) is the Ring sprite with a blue stone instead of red; the plain `do:ring` stays red.
 - Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
