@@ -52,6 +52,7 @@ give @p minecraft:iron_nugget[item_model="do:golden_vinyl_of_truth",item_name="G
 give @p minecraft:iron_nugget[item_model="do:the_enthusiast_s_refusal",item_name="The Enthusiast's Refusal"]
 give @p minecraft:iron_nugget[item_model="do:windmill",item_name="Windmill"]
 give @p minecraft:iron_nugget[item_model="do:cadens_ring",item_name="Caden's Ring of the Helping Hand"]
+give @p minecraft:iron_nugget[item_model="do:saettas_shroud_of_helping",item_name="Saetta's Shroud of Helping"]
 ```
 
 ## Wearable 3D Glasses
@@ -142,5 +143,6 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Cards live under `do:cards/...` (models in `models/item/cards`, textures in `textures/item/cards`), merged in from the separate DO Cards pack and moved from the `custom` namespace to `do`.
 - Windmill is a 3D model (thatched tower, cap, gallery, orange/white sails), based on a photo of the Het Jonge Schaap mill at Zaanse Schans.
 - Caden's Ring of the Helping Hand (`do:cadens_ring`) is the Ring sprite with a blue stone instead of red; the plain `do:ring` stays red.
+- Saetta's Shroud of Helping (`do:saettas_shroud_of_helping`) is the Robe sprite recolored pink with white trim and a small heart on the chest; the plain `do:robe` keeps its original colors.
 - Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
