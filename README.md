@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=fd6e1420e776ac18dfe5b96855d8a0f60317298b
+resource-pack-sha1=95f1bfd2b2bdaa4327ef28f74aaaa38b3f692461
 require-resource-pack=true
 ```
 
@@ -53,6 +53,8 @@ give @p minecraft:iron_nugget[item_model="do:the_enthusiast_s_refusal",item_name
 give @p minecraft:iron_nugget[item_model="do:windmill",item_name="Windmill"]
 give @p minecraft:iron_nugget[item_model="do:cadens_ring",item_name="Caden's Ring of the Helping Hand"]
 give @p minecraft:iron_nugget[item_model="do:saettas_shroud_of_helping",item_name="Saetta's Shroud of Helping"]
+give @p minecraft:iron_nugget[item_model="do:mintis_headband",item_name="The Mintis's Headband"]
+give @p minecraft:iron_nugget[item_model="do:lucians_stained_glass_carrot",item_name="Lucian's Stained-Glass Carrot"]
 ```
 
 ## Wearable 3D Glasses
@@ -86,6 +88,20 @@ give @p minecraft:carved_pumpkin[item_model="do:wizardhat_3d",item_name="Wizard 
 Iron nugget base (can't be placed as a block):
 ```
 give @p minecraft:iron_nugget[item_model="do:wizardhat_3d",item_name="Wizard Hat",equippable={slot:"head"}]
+```
+
+## Wearable Headband (The Mintis)
+
+The red headband from TheMintis skin as a 3D model: a band one skin-pixel tall that wraps the head just below the hairline, with a knot at the back and two tails hanging in a V. It sits on the head and leaves the face clear.
+
+Iron nugget base (can't be placed as a block):
+```
+give @p minecraft:iron_nugget[item_model="do:mintis_headband",item_name="The Mintis's Headband",equippable={slot:"head"}]
+```
+
+Carved pumpkin base (the pumpkin trick). Overriding `equippable` removes the orange pumpkin blur:
+```
+give @p minecraft:carved_pumpkin[item_model="do:mintis_headband",item_name="The Mintis's Headband",equippable={slot:"head"}]
 ```
 
 ## Give commands - cards
@@ -144,5 +160,7 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Windmill is a 3D model (thatched tower, cap, gallery, orange/white sails), based on a photo of the Het Jonge Schaap mill at Zaanse Schans.
 - Caden's Ring of the Helping Hand (`do:cadens_ring`) is the Ring sprite with a blue stone instead of red; the plain `do:ring` stays red.
 - Saetta's Shroud of Helping (`do:saettas_shroud_of_helping`) is the Robe sprite recolored pink with white trim and a small heart on the chest; the plain `do:robe` keeps its original colors.
-- Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture.
+- Lucian's Stained-Glass Carrot (`do:lucians_stained_glass_carrot`) is a flat 16x16 sprite: a carrot of orange glass panes and green glass leaves set in a stone gothic window arch with blue/purple panes; Blockbench project is DO_LuciansStainedGlassCarrot.bbmodel.
+- The Mintis's Headband (`do:mintis_headband`) is a 3D model with a 16x16 texture taken from the band pixels of TheMintis skin; Blockbench project is DO_MintisHeadband.bbmodel.
+- Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture; Blockbench project is DO_WizardHat_3D.bbmodel.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
