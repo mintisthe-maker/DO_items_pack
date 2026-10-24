@@ -9,7 +9,7 @@ Namespace: `do`. Each item uses the `item_model` component, so any base item can
 
 ```
 resource-pack=https://raw.githubusercontent.com/mintisthe-maker/do_items_pack/main/DO_Items_Pack.zip
-resource-pack-sha1=95f1bfd2b2bdaa4327ef28f74aaaa38b3f692461
+resource-pack-sha1=14dba2f4b943af72f2af4dd1e06918a7f6fe6339
 require-resource-pack=true
 ```
 
@@ -55,6 +55,21 @@ give @p minecraft:iron_nugget[item_model="do:cadens_ring",item_name="Caden's Rin
 give @p minecraft:iron_nugget[item_model="do:saettas_shroud_of_helping",item_name="Saetta's Shroud of Helping"]
 give @p minecraft:iron_nugget[item_model="do:mintis_headband",item_name="The Mintis's Headband"]
 give @p minecraft:iron_nugget[item_model="do:lucians_stained_glass_carrot",item_name="Lucian's Stained-Glass Carrot"]
+give @p minecraft:iron_nugget[item_model="do:elder_council",item_name="Vestments of the Elder Council"]
+```
+
+## Wearable cape: Vestments of the Elder Council
+
+A blue-and-gold cape with purple accents (purple gems in the two center triangles, a gold and purple wavy hem, and a deep purple lining). It is drawn on the player's back with the folded elytra model, through the equipment asset `do:elder_council`. The inventory icon is `do:elder_council`, the Cloak sprite with purple gems and hem. The plain `do:cloak` is unchanged.
+
+Cosmetic cape (iron nugget base, can't glide). It takes the chest slot:
+```
+give @p minecraft:iron_nugget[item_model="do:elder_council",equippable={slot:"chest",asset_id:"do:elder_council"},custom_name={text:"",italic:false,extra:[{text:"❖ ",color:"dark_purple"},{text:"Vestments of the Elder Council",color:"gold"},{text:" ❖",color:"dark_purple"}]},lore=[{text:"Granted, not crafted. Ask an Elder.",color:"gray",italic:true}]]
+```
+
+Working elytra (glides, uses durability, repairs with phantom membrane, takes Mending/Unbreaking):
+```
+give @p minecraft:elytra[item_model="do:elder_council",equippable={slot:"chest",asset_id:"do:elder_council",equip_sound:"minecraft:item.armor.equip_elytra",damage_on_hurt:false},custom_name={text:"",italic:false,extra:[{text:"❖ ",color:"dark_purple"},{text:"Vestments of the Elder Council",color:"gold"},{text:" ❖",color:"dark_purple"}]},lore=[{text:"Granted, not crafted. Ask an Elder.",color:"gray",italic:true}]]
 ```
 
 ## Wearable 3D Glasses
@@ -162,5 +177,6 @@ give @p minecraft:iron_nugget[item_model="do:cards/treasure_hunter",item_name="T
 - Saetta's Shroud of Helping (`do:saettas_shroud_of_helping`) is the Robe sprite recolored pink with white trim and a small heart on the chest; the plain `do:robe` keeps its original colors.
 - Lucian's Stained-Glass Carrot (`do:lucians_stained_glass_carrot`) is a flat 16x16 sprite: a carrot of orange glass panes and green glass leaves set in a stone gothic window arch with blue/purple panes; Blockbench project is DO_LuciansStainedGlassCarrot.bbmodel.
 - The Mintis's Headband (`do:mintis_headband`) is a 3D model with a 16x16 texture taken from the band pixels of TheMintis skin; Blockbench project is DO_MintisHeadband.bbmodel.
+- Vestments of the Elder Council: the cape texture is `textures/entity/equipment/wings/elder_council.png` (64x32, elytra layout). The design is laid out to match where each pixel lands on the folded wings, so the triangles meet in the middle of the back; it looks off-center when viewed flat. The equipment file leaves out `use_player_texture`, so a wearer's own Minecraft cape never replaces it.
 - Wizard Hat 3D (`do:wizardhat_3d`) is a 3D model with a 32x32 texture; Blockbench project is DO_WizardHat_3D.bbmodel.
 - 3D Glasses is a 3D model (frame, see-through red/blue lenses, temples). See "Wearable 3D Glasses" above. Shape based on "3D Glasses" by James.Pham (https://sketchfab.com/3d-models/3d-glasses-3088cc62775140e7b567b597b5bd378e), CC-BY-4.0.
